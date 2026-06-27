@@ -21,6 +21,9 @@ theme:
     - navigation.sections
     - navigation.expand
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
