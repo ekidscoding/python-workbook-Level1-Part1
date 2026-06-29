@@ -5,13 +5,13 @@
       
       
       
-        <link rel="canonical" href="https://ekidscoding.github.io/python-workbook-Level1-Part1/01/130/">
+        <link rel="canonical" href="https://ekidscoding.github.io/python-workbook-Level1-Part1/01/142/">
       
       
-        <link rel="prev" href="../120/">
+        <link rel="prev" href="../141/">
       
       
-        <link rel="next" href="../140/">
+        <link rel="next" href="../143/">
       
       
         
@@ -22,7 +22,7 @@
     
     
       
-        <title>Змінні - наклейки, а НЕ коробки - Python Workbook Level 1 1️⃣</title>
+        <title>Тип Текст - Python Workbook Level 1 1️⃣</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#-" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти до змісту
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Змінні - наклейки, а НЕ коробки
+              Тип Текст
             
           </span>
         </div>
@@ -390,37 +390,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Змінні - наклейки, а НЕ коробки
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../130/" class="md-nav__link">
         
   
   
@@ -436,37 +409,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Зміст">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Зміст
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Вимоги
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -532,10 +474,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../142/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -551,6 +502,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -608,47 +560,7 @@
 
 
 
-<h1 id="-">Змінні - наклейки, а НЕ коробки</h1>
-<p>Змінні - це основа основ програмування.</p>
-<div class="admonition info">
-<p>Змінна - це така собі наліпка, стікер <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.5 2h-13C3.6 2 2 3.6 2 5.5v13C2 20.4 3.6 22 5.5 22H16l6-6V5.5C22 3.6 20.4 2 18.5 2M6 7h12v2H6zm0 4h12v2H6zm7 6H6v-2h7zm2 3v-1.5c0-1.9 1.6-3.5 3.5-3.5H20z"></path></svg></span> або бірка <img alt="🏷" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3f7.svg" title=":label:">, яка вішається на щось.</p>
-</div>
-<p><strong>Щось</strong> -- це одне з:</p>
-<ul>
-<li>ціле число (3, 14, 159265359)</li>
-<li>десятковий дріб, наприклад <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v2h2v12h2V7h6v9a3 3 0 0 0 3 3 3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1 1 1 0 0 1-1-1V7h2V5"></path></svg></span> (3.14159265359)</li>
-<li>рядок тексту ("Python", "Друг", "こんにちは")</li>
-<li>список, що містить у собі довільні дані ( ["A", "b", "_"] )</li>
-<li>більш складний об'єкт - про такі трішки пізніше.</li>
-</ul>
-<h2 id="_1">Вимоги</h2>
-<p>В різних мовах програмування вимоги до змінних різні.</p>
-<p>В більш строгих (статично типізованих) мовах ви<br><strong>не</strong> маєте змоги приліпити стікер спочатку на ціле число,<br>а потім на дробове, або текст.</p>
-<div class="admonition note">
-<p>В цих строгих мовах (не Python) при створенні змінної ви вказуєте її тип і він більше не зміниться.</p>
-</div>
-<p>Але змінна залишається змінною,<br>ви можете змінити її <strong>значення</strong>,<br>тобто те <strong>щось</strong> до чого ця наліпка, бірка чи стікер прив'язані.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Мова</th>
-<th style="text-align: center;">Тип даних</th>
-<th style="text-align: center;">Значення</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Строга</td>
-<td style="text-align: center;">Вказується раз і назавжди</td>
-<td style="text-align: center;">Змінюється в межах одного типу</td>
-</tr>
-<tr>
-<td style="text-align: center;">Динамічна</td>
-<td style="text-align: center;">Береться по факту наявних даних, вираховується</td>
-<td style="text-align: center;">Змінюється як саме значення (<em>часто</em>) так і його тип (<em>рідше</em>, але допускається)</td>
-</tr>
-</tbody>
-</table>
+<h1 id="_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m18.5 4 1.16 4.35-.96.26c-.45-.87-.91-1.74-1.44-2.18C16.73 6 16.11 6 15.5 6H13v10.5c0 .5 0 1 .33 1.25.34.25 1 .25 1.67.25v1H9v-1c.67 0 1.33 0 1.67-.25.33-.25.33-.75.33-1.25V6H8.5c-.61 0-1.23 0-1.76.43-.53.44-.99 1.31-1.44 2.18l-.96-.26L5.5 4z"></path></svg></span> Тип Текст</h1>
 
 
 
@@ -686,7 +598,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Футер">
         
           
-          <a href="../120/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Алгоритм - основа програми">
+          <a href="../141/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Цілі числа та операції над ними">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -696,20 +608,20 @@
                 Назад
               </span>
               <div class="md-ellipsis">
-                Алгоритм - основа програми
+                Цілі числа та операції над ними
               </div>
             </div>
           </a>
         
         
           
-          <a href="../140/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Прості типи даних">
+          <a href="../143/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Дроби">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Вперед
               </span>
               <div class="md-ellipsis">
-                Прості типи даних
+                Дроби
               </div>
             </div>
             <div class="md-footer__button md-icon">
